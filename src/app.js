@@ -1,3 +1,6 @@
 export class App {
-  message = 'Hello World!';
+  constructor() {
+    this.message = "Hello World";
+    this.sayHello = "child view-model coming from parent view-model";
+  }
 }

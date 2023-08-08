@@ -12,5 +12,6 @@ export class Task {
   }
   activate(bindingContext) {
     this.item = bindingContext;
+    console.log("test");
   }
 }

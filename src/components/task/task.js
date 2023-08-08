@@ -13,6 +13,5 @@ export class Task {
   activate(bindingContext) {
     this.item = bindingContext;
     console.log("test");
-    console.log("feature-branch change");
   }
 }

@@ -59,15 +59,17 @@
     </div>
   </nav>
   <!-- two section -->
-  <div class="container-fluid">
-    <div class="col-10">
-      <compose view-model="./components/event/event"></compose>
-    </div>
-    <div class="col-2">
-      <compose view-model="./components/sponsor/sponsor"></compose>
-    </div>
-    <div>
-      <compose view="child-view.html"></compose>
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <compose
+          view="./components/events/events.html"
+          view-model="./components/events/events"
+        ></compose>
+      </div>
+      <div class="col-4">
+        <compose view-model="./components/sponsor/sponsor"></compose>
+      </div>
     </div>
   </div>
 </template>

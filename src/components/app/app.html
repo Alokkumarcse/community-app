@@ -25,6 +25,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -62,17 +68,22 @@
   <div class="container">
     <div class="row">
       <div class="col-8">
-        <compose
+        <!-- <compose
           view="../events/events.html"
           view-model="../events/events"
-        ></compose>
+        ></compose> -->
+        <router-view></router-view>
       </div>
-      <div class="col-4">
+      <!-- <div class="col-4">
         <compose view-model="../sponsor/sponsor"></compose>
-      </div>
+      </div> -->
     </div>
   </div>
-  <div>
+  <!-- <div>
     <h2>Hello compose view testing!</h2>
-  </div>
+    <compose
+      view="../compose-elements/parent-element/parent.html"
+      view-model="../compose-elements/parent-element/parent"
+    ></compose>
+  </div> -->
 </template>

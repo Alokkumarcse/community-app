@@ -1,0 +1,14 @@
+<template>
+  <h4>${parentMessage}</h4>
+  <div>
+    <p>Child element</p>
+    <div repeat.for="item of items">
+      <h2>${index}</h2>
+      <compose
+        model.bind="item"
+        view="../child-element/child.html"
+        view-model="../child-element/child"
+      ></compose>
+    </div>
+  </div>
+</template>

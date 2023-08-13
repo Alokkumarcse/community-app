@@ -1,0 +1,8 @@
+<template>
+  <h5>${parentMessage}</h5>
+  <h5>${childMessage}</h5>
+  <p>${item.id}: ${item.title}</p>
+  <div repeat.for="list of lists">
+    <p>${list.title}</p>
+  </div>
+</template>

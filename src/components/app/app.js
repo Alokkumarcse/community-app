@@ -43,6 +43,7 @@ export class App {
       {
         route: "eventDetails/:eventId",
         moduleId: PLATFORM.moduleName("../events/eventDetails"),
+        name: "eventDetails",
       },
     ]);
   }

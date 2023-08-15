@@ -40,6 +40,10 @@ export class App {
         name: "link",
         nav: true,
       },
+      {
+        route: "eventDetails/:eventId",
+        moduleId: PLATFORM.moduleName("../events/eventDetails"),
+      },
     ]);
   }
 }

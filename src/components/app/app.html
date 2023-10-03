@@ -48,6 +48,9 @@
         ></compose>
         <router-view></router-view>
       </div>
+      <div>
+        <compose view-model="../model-bind/parent"></compose>
+      </div>
       <!-- <div class="col-4">
         <compose view-model="../sponsor/sponsor"></compose>
       </div> -->
@@ -60,4 +63,5 @@
       view-model="../compose-elements/parent-element/parent"
     ></compose>
   </div> -->
+  <input type="text" value.bind="inputValue" />
 </template>

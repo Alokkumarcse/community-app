@@ -1,13 +1,19 @@
 // import { useView } from "aurelia-framework";
 // @useView("./app.html")
-import { PLATFORM } from "aurelia-framework";
+import { observable, bindable, PLATFORM } from "aurelia-framework";
 export class App {
+  // @bindable
+  @observable
+  inputValue = "I'm input value";
   constructor() {
     this.message = "Hello World";
     this.parentProp = "child view-model coming from parent view-model";
     this.test = "App view-model property";
   }
 
+  inputValueChanged(newValue, oldValue) {
+    console.log(`Input field change for ${oldValue} to ${newValue}`);
+  }
   configureRouter(config, router) {
     this.router = router;
     config.title = "Router testing";
